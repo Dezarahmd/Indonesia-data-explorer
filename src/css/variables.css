@@ -1,0 +1,111 @@
+:root {
+
+    /* ===================================
+       COLORS
+    =================================== */
+
+    --primary-color: #2563EB;
+    --primary-hover: #1D4ED8;
+
+    --secondary-color: #3B82F6;
+
+    --success-color: #10B981;
+    --danger-color: #EF4444;
+    --warning-color: #F59E0B;
+
+    --background-color: #F8FAFC;
+    --surface-color: #FFFFFF;
+
+    --text-color: #1E293B;
+    --text-light: #64748B;
+
+    --border-color: #E2E8F0;
+
+
+    /* ===================================
+       TYPOGRAPHY
+    =================================== */
+
+    --font-family: "Poppins", sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 3rem;
+    --font-size-4xl: 4rem;
+
+
+    /* ===================================
+       FONT WEIGHT
+    =================================== */
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+
+    /* ===================================
+       SPACING
+    =================================== */
+
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 5rem;
+    --space-4xl: 7rem;
+
+
+    /* ===================================
+       BORDER RADIUS
+    =================================== */
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-full: 999px;
+
+
+    /* ===================================
+       SHADOW
+    =================================== */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+
+    /* ===================================
+       LAYOUT
+    =================================== */
+
+    --container-width: 1200px;
+    --header-height: 80px;
+
+
+    /* ===================================
+       Z-INDEX
+    =================================== */
+
+    --z-navbar: 100;
+    --z-dropdown: 200;
+    --z-modal: 500;
+    --z-loader: 1000;
+
+
+    /* ===================================
+       TRANSITION
+    =================================== */
+
+    --transition: 0.3s ease;
+
+}
