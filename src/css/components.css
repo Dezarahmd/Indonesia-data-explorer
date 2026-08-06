@@ -1,0 +1,46 @@
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .875rem 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-medium);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-medium);
+    transition: var(--transition);
+}
+
+.github-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    border-color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--surface-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-xl);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
