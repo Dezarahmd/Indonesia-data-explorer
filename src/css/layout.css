@@ -1,21 +1,80 @@
+/* ===================================
+   HEADER
+=================================== */
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: var(--surface-color);
-    border-bottom: 1px solid var(--border-color);
+    z-index: var(--z-navbar);
+    background: transparent;
+    transition:
+    background .3s ease,
+    backdrop-filter .3s ease,
+    box-shadow .3s ease;
+    padding-top: 1rem;
 }
+
+.header.scrolled .navbar {
+    height: var(--header-height);
+    margin: 12px 24px;
+    padding-inline: 2rem;
+    border-radius: var(--radius-full);
+    background: rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(12px);
+
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
 
 .navbar {
     height: var(--header-height);
+    margin: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: var(--space-xl);
+
+    transition:
+        margin .35s ease,
+        border-radius .35s ease,
+        background-color .35s ease,
+        backdrop-filter .35s ease,
+        box-shadow .35s ease,
+        height .35s ease;
 }
 
+
+/* ===================================
+   LOGO
+=================================== */
+
 .logo {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: var(--fw-bold);
+    letter-spacing: .5px;
+
+    color: var(--surface-color);
+
+    transition: color var(--transition);
+}
+
+.logo:hover {
     color: var(--primary-color);
 }
+
+
+/* ===================================
+   NAVIGATION
+=================================== */
 
 .nav-menu {
     display: flex;
@@ -24,16 +83,24 @@
 }
 
 .nav-link {
+    color: var(--surface-color);
     font-weight: var(--fw-medium);
-    transition: var(--transition);
+
+    transition: color var(--transition);
 }
 
 .nav-link:hover {
     color: var(--primary-color);
 }
 
+
+/* ===================================
+   FOOTER
+=================================== */
+
 .footer {
     padding: var(--space-xl) 0;
-    border-top: 1px solid var(--border-color);
+
     background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
 }

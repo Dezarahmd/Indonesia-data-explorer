@@ -1,0 +1,55 @@
+/* ===================================
+   HERO
+=================================== */
+
+.hero {
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.90) 0%,
+            rgba(0, 0, 0, 0.75) 35%,
+            rgba(0, 0, 0, 0.45) 60%,
+            rgba(0, 0, 0, 0.20) 100%
+        ),
+        url("/src/assets/hero-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+}
+
+.hero-text {
+    max-width: 650px;
+    padding-left: var(--space-2xl);
+    padding-top: 40px;
+}
+
+.hero-text h1 {
+    color: var(--surface-color);
+
+    font-size: 4rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.1;
+
+    margin-bottom: var(--space-lg);
+}
+
+.hero-text p {
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: var(--space-xl);
+}
