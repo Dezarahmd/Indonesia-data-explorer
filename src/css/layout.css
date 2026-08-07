@@ -63,7 +63,7 @@
     font-size: var(--font-size-xl);
     font-weight: var(--fw-bold);
     letter-spacing: .5px;
-
+    justify-self: start;
     color: var(--surface-color);
 
     transition: color var(--transition);
@@ -82,6 +82,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-xl);
+    justify-self: center;
 }
 
 .nav-link {
@@ -146,6 +147,29 @@
 /* Active ga perlu underline */
 .nav-link.active::after {
     width: 0;
+}
+
+/* GITHUB */
+.github-btn{
+    justify-self: end;
+
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+
+    padding:.75rem 1.4rem;
+
+    color:var(--surface-color);
+
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:999px;
+
+    transition:var(--transition);
+}
+
+.github-btn:hover{
+    background:rgba(255,255,255,.08);
+    border-color:rgba(255,255,255,.25);
 }
 
 /* ===================================

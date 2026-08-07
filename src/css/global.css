@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-height: 80px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -66,5 +70,21 @@ p {
 }
 
 section {
-    padding: var(--space-4xl) 0;
+    padding-block: var(--section-padding);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
 }

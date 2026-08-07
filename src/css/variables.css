@@ -108,4 +108,14 @@
 
     --transition: 0.3s ease;
 
+    /* ===================================
+         LAYOUT
+      =================================== */
+
+      --container-width: 1200px;
+      --header-height: 80px;
+
+      --section-padding: 8rem;
+      --section-padding-sm: 6rem;
+      --section-padding-lg: 10rem;
 }
