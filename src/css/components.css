@@ -16,20 +16,17 @@
 }
 
 .github-btn {
+    justify-self: end;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: .75rem 1.25rem;
-
+    width: fit-content;
+    border-radius: var(--radius-full);
     color: var(--surface-color);
-
-    border: 1px solid rgba(255,255,255,.35);
-    border-radius: var(--radius-md);
-
-    backdrop-filter: blur(10px);
-
+    border: 1px solid rgba(255,255,255,.25);
     transition: all var(--transition);
+    gap: .5rem;
 }
 
 .github-btn:hover {
