@@ -1,0 +1,550 @@
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+
+/* ===================================
+   LARGE TABLET / SMALL LAPTOP
+   <= 1200px
+=================================== */
+
+@media (max-width: 1200px) {
+
+    /* ===============================
+       CONTAINER
+    =============================== */
+
+    .container {
+        width: min(92%, var(--container-width));
+    }
+
+
+    /* ===============================
+       NAVBAR
+    =============================== */
+
+    .navbar {
+        margin: 0 16px;
+        padding-inline: 1.5rem;
+    }
+
+
+    /* ===============================
+       HERO
+    =============================== */
+
+    .hero .container {
+        padding-left: 5rem;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+
+    /* ===============================
+       STATS
+    =============================== */
+
+    .stats-grid {
+        gap: var(--space-lg);
+    }
+
+
+    /* ===============================
+       FEATURES
+    =============================== */
+
+    .features-grid {
+        gap: var(--space-lg);
+    }
+
+}
+
+
+/* ===================================
+   TABLET
+   <= 992px
+=================================== */
+
+@media (max-width: 992px) {
+
+    /* ===============================
+       GLOBAL
+    =============================== */
+
+    section {
+        padding: var(--space-4xl) 0;
+    }
+
+
+    /* ===============================
+       NAVBAR
+    =============================== */
+
+    .navbar {
+        grid-template-columns: auto 1fr auto;
+
+        margin: 0 12px;
+        padding-inline: 1.25rem;
+    }
+
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: var(--font-size-sm);
+    }
+
+    .github-btn {
+        padding: .6rem .9rem;
+    }
+
+
+    /* ===============================
+       HERO
+    =============================== */
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero .container {
+        padding-left: 2rem;
+    }
+
+    .hero-text {
+        max-width: 560px;
+        padding-left: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text p {
+        max-width: 500px;
+    }
+
+
+    /* ===============================
+       SECTION HEADER
+    =============================== */
+
+    .section-header {
+        max-width: 650px;
+
+        margin-bottom: var(--space-2xl);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+
+    /* ===============================
+       STATS
+    =============================== */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: var(--space-lg);
+    }
+
+
+    /* ===============================
+       FEATURES
+    =============================== */
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: var(--space-lg);
+    }
+
+
+    /* ===============================
+       ABOUT
+    =============================== */
+
+    .about {
+        padding: 4rem 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: var(--space-3xl);
+    }
+
+    .about-image img {
+        height: 450px;
+    }
+
+    .about-text {
+        max-width: 700px;
+    }
+
+
+    /* ===============================
+       FOOTER
+    =============================== */
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 3rem;
+    }
+
+}
+
+
+/* ===================================
+   MOBILE
+   <= 768px
+=================================== */
+
+@media (max-width: 768px) {
+
+    /* ===============================
+       GLOBAL
+    =============================== */
+
+    section {
+        padding: var(--space-3xl) 0;
+    }
+
+
+    /* ===============================
+       NAVBAR
+    =============================== */
+
+    .header {
+        padding-top: .75rem;
+    }
+
+    .navbar {
+        height: 64px;
+
+        margin: 0 10px;
+
+        padding-inline: 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        padding-bottom: .6rem;
+
+        font-size: .8rem;
+    }
+
+    .github-btn {
+        padding: .55rem .7rem;
+    }
+
+    .github-btn span {
+        display: none;
+    }
+
+
+    /* ===============================
+       HERO
+    =============================== */
+
+    .hero {
+        min-height: 100vh;
+
+        background-position: center;
+    }
+
+    .hero .container {
+        padding-left: 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+
+        padding: 5rem 0 2rem;
+    }
+
+    .hero-text h1 {
+        max-width: 600px;
+
+        font-size: 2.8rem;
+        line-height: 1.15;
+    }
+
+    .hero-text p {
+        max-width: 500px;
+
+        font-size: var(--font-size-md);
+        line-height: 1.7;
+    }
+
+
+    /* ===============================
+       SECTION HEADER
+    =============================== */
+
+    .section-header {
+        max-width: 100%;
+
+        margin-bottom: var(--space-2xl);
+
+        padding-inline: .5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-description {
+        font-size: var(--font-size-md);
+    }
+
+
+    /* ===============================
+       STATS
+    =============================== */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 1rem;
+
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-title {
+        font-size: var(--font-size-sm);
+    }
+
+
+    /* ===============================
+       FEATURES
+    =============================== */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.75rem;
+    }
+
+
+    /* ===============================
+       ABOUT
+    =============================== */
+
+    .about {
+        padding: 3.5rem 0;
+    }
+
+    .about-content {
+        gap: 2.5rem;
+    }
+
+    .about-image img {
+        height: 380px;
+    }
+
+    .about-text .section-title {
+        font-size: 2.2rem;
+    }
+
+    .about-text > p {
+        font-size: var(--font-size-sm);
+    }
+
+    .about-highlights {
+        gap: 1rem;
+
+        margin-top: 1.5rem;
+    }
+
+
+    /* ===============================
+       FOOTER
+    =============================== */
+
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+
+        padding-bottom: 3rem;
+    }
+
+    .footer-brand,
+    .footer-social {
+        max-width: 100%;
+    }
+
+}
+
+
+/* ===================================
+   SMALL MOBILE
+   <= 480px
+=================================== */
+
+@media (max-width: 480px) {
+
+    /* ===============================
+       CONTAINER
+    =============================== */
+
+    .container {
+        width: min(92%, var(--container-width));
+    }
+
+
+    /* ===============================
+       NAVBAR
+    =============================== */
+
+    .navbar {
+        margin: 0 8px;
+
+        padding-inline: .85rem;
+    }
+
+    .logo {
+        font-size: .9rem;
+    }
+
+    .nav-menu {
+        gap: .75rem;
+    }
+
+    .nav-link {
+        font-size: .72rem;
+    }
+
+    .github-btn {
+        padding: .5rem .6rem;
+    }
+
+
+    /* ===============================
+       HERO
+    =============================== */
+
+    .hero-text {
+        padding-top: 4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-text p {
+        font-size: .9rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* ===============================
+       SECTION HEADER
+    =============================== */
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .section-subtitle {
+        font-size: .75rem;
+
+        letter-spacing: 1.5px;
+    }
+
+    .section-description {
+        font-size: .9rem;
+    }
+
+
+    /* ===============================
+       STATS
+    =============================== */
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 1.75rem 1rem;
+    }
+
+
+    /* ===============================
+       ABOUT
+    =============================== */
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-text .section-title {
+        font-size: 1.9rem;
+    }
+
+    .about-highlight > i {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* ===============================
+       FOOTER
+    =============================== */
+
+    .footer-bottom {
+        gap: .5rem;
+    }
+
+    .footer-bottom p {
+        font-size: .75rem;
+    }
+
+}
