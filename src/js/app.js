@@ -48,3 +48,35 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    menuToggle.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+
+
+/* ===================================
+   RESET MOBILE MENU ON DESKTOP
+=================================== */
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 768) {
+        navMenu.classList.remove("active");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+    }
+
+});
